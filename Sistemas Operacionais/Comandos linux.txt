@@ -1,0 +1,58 @@
+touch nomearquivo = cria arquivo
+rm nomearquivo = deleta arquivo
+mkdir nomepasta = cria pasta
+rm -rf nome = deleta qualquer coisa
+
+
+
+
+
+whoami = Mostra quem é. Ex. convidado, admin
+uname = Mostra informação do sistema. Ex. Linux
+uname -n ou --nodename = mostra o nome do host da rede. Ex. localhost
+ls -a (-l) = mostra os arquivos e pastas do diretório com mais informações.
+w = exibe quantos usuários estão logados e algumas informações.
+cd Downloads = altera/entra para o diretório Downloads
+pwd = mostra o diretório de trabalho(print working directory). Ex. / home / sysadmin
+echo msg = imprime uma msg na tela
+echo $PATH = motra o diretório/localização do comando
+which date
+echo D* = Exibe todos os nomes de arquivos e pastas que comecem com D
+echo *S = Exibe todos os nomes de arquivos e pastas que terminem com S
+echo D????? = Exibe os itens que começam com D e tem tamanho igual a ?
+echo ??????*s = Exibe itens com pelo menos 6 caracteres que terminem com S
+echo[DP]* = Os primeiros caracteres podem ser D ou P
+echo[!DP]* = Começam com qualquer letra exceto D e P
+echo[D-P]* = Pode começar com qualquer caracter entre D e P
+acho[!D-P]* = Qualquer menos entre D e P
+ascii = Exibe tabela ascii´
+echo hoje e `date` = executa comando date dentro da msg
+man date = Exibe o manual do comando date
+unzip documents.zip ProjectX/* = extrai todos os arquivos dentro de ProjectX
+tar –xzf backup.tar.gz home/fred/ = extrai apenas os arquivos da pasta fred do arquivo backup. Endereço no arquivo: home/fred/somefile
+tar –tzf foo.tar.gz = mostra o que ta dentro do arquivo foo.tar.gz
+tar –cvjf foo.tbz a b c = Adicionar nomes ao arquivo(File names to be added to the archive)
+cat list.file | sort ou sort < list.file = classifica em ordem alfabética as linhas de list.file e exiba na tela
+ln = Imprime números de linha
+rm = permite excluir vários arquivos ao mesmo tempo
+echo "text" > file.txt = Cria um arquivo file.txt com text dentro, se já existir, subscreve o conteúdo.
+ps = mostra os processos executados por padrão no shell
+top = são exibidas informações do sistema(gerenciador de tarefas do windows)
+free = exibe informações da memória do sistema
+/proc/cmdline = arquivo com informações passadas non boot do sistema
+rpm -qa =  exiibe todos os pacotes instalados no sistema
+netstat -r ou route = exibe a tabela de rotas
+
+Dovecot e o Cyrus IMAP são populares servidores POP / IMAP
+Os gerenciados de janelas são Compiz, FVWM, e Enlightenment
+Ambientes de desktop geralmente são KDE e o GNOME que já possuem gerenciadores de janelas
+No Debian, as ferramentas incluem dpkg, apt-get e apt-cache. Red Hat, você usa rpm e yum.
+As linguagens podem ser interpretadas(traduz o código no computador a medida que é executado)  ou compiladas(executado de uma só vez)
+Licenças de código aberto, BSD(distribui o software gratuitamente mas com os mesmo direitos autorais), GPL e FSF.
+Software FLOSS são gratuitos e podem ser redistribuidos como desejar.
+Copyleft exige que todas as modificações e extensões do software livre também sejam livres.
+
+
+
+
+

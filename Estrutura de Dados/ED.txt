@@ -1,0 +1,22 @@
+quick
+i(primeiro indice), f(ultimo indice), pivo(indice do meio, (i+f)//2 = 4)
+enquanto/se i < que pivo i++
+enquanto/se f > que pivo f--
+quando i e f pararem, se i < f, troca os valores, i++ f--
+quando f e i se cruzarem, separa o vetor em dois
+refaz o método para cada lado do vetor atualizando o i, f e pivo para o vetor manipulado
+
+shell
+192837 => h=3 1<8;9<3 troca;2<7
+132897 => h=2 1<2;3<8;2<9;8<7 troca
+132798 => h=1 1<3; 3<2 troca... 
+h(tamanho do salto) = nº elementos//2(se impar, arredonda para cima)
+compara o primeiro elemento com os elementos da qtde do valor chave a frente
+divide a chave por 2 cada vez que terminar as comparações no vetor e o processo é repetido
+até chave = 1, onde será comparado o elemento com seu próximo de todo o array
+
+merge
+inicio + fim // 2 = meio, encontra o meio e divide em dois vetores
+repete para cada vetor divindo ao meio até resta apenas um
+ao final, compara da esquerda para a direita cada vetor com o vetor que foi dividido
+volta juntando os vetores e colocando em ordem

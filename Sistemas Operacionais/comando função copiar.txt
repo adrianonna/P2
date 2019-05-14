@@ -1,0 +1,31 @@
+// To open a file that already exists
+int open(const char *pathname, int flags);
+// To create a file
+int open(const char *pathname, int flags, mode_t mode);
+// To close a file
+int close(int fd);
+// To read data from a file
+ssize_t read(int fd, void *buf, size_t count);
+// To write data to a file
+ssize_t write(int fd, const void *buf, size_t count);
+// To position the offset of the file,
+//  so that the next read/write syscall will
+//  start at that position
+off_t lseek(int fd, off_t offset, int whence);
+
+fd = open (file, abertura ...) - Abre um arquivo (leitura, escrita ou os dois)
+s = close(fd) - Fecha o arquivo anteriormente aberto 
+n = read (fd, buffer, nbytes) - Lê dados do arquivo 'fd' no 'buffer',  de 'nbytes' valores de bytes
+n = write(fd, buffer, nbytes) - Analogamente ao read, mas escreve
+S_IRUSR - User read permission
+S_IWUSR - User write permission
+S_IROTH - Other read permission
+S_IWOTH - Other write permission
+0, 1, or 2, to refer to standard input, standard output, or standard error, respectively.
+O_RDONLY: read only
+O_WRONLY: write only
+O_RDWR: read and write
+O_CREAT: create file if it doesn’t exist
+O_EXCL: prevent creation if it already exists
+
+
